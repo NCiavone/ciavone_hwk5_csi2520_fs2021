@@ -41,7 +41,7 @@ app.use(express.urlencoded({extended:true})); //to parse the HTML form
 
 //Initialize ejs Middleware
 app.set("view engine", "ejs");
-app.use("/public", express.static(__dirname + "/public"));
+app.use(express.static("public"));
 
 //route <url the client will use and how the server will repons to that url>
 app.get("/",(req,res) => {
