@@ -1,0 +1,139 @@
+
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  a, p, h1, h2, h3, h4, h5, h6{
+    color:#333;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    padding: 0px 20px 0px 20px;
+  }
+
+  h1{
+    font-size: 2.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    align-items: center;
+
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+
+  h5{
+    font-size: 1.1rem;
+  }
+
+.container{
+  max-width: 900px;
+  margin: auto;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+header{
+  background-image:url('/img/anime-clouds-sky.jpg');
+
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+header nav a{
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+header nav a:hover{
+  color: aquamarine;
+}
+section{
+  padding: 20px;
+}
+main{
+  float: left;
+  width: 70%;
+}
+
+main p{
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  padding: 0px 20px 0px 20px;
+}
+
+aside{
+  float:right;
+  width: 25%;
+}
+aside p{
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  padding: 20px;
+}
+aside ul{
+  padding: 0px 20px 0px 20px;
+}
+aside ul li {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  list-style: none;
+  padding: 3px 0px 3px 0px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  display: inline-block;
+  width: 100%;
+}
+footer p{
+  color: whitesmoke;
+}
+footer a {
+  color:whitesmoke;
+  padding: 0px 20px 0px 20px;
+}
+
+footer a:hover{
+  color:aquamarine;
+}
+
+@media (max-width: 700px){
+  main{
+    float: none;
+    width:100%;
+  }
+  aside {
+    float: none;
+    width:100%;
+  }
+}
+button {
+  border: none;
+  color: #333;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.centerImage
+{
+ text-align:center;
+ vertical-align: middle;
+}
+
+html{
+  background-color: rgb(193, 227, 248);
+}
