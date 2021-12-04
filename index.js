@@ -45,7 +45,7 @@ app.use("/public", express.static(__dirname + "/public"));
 
 //route <url the client will use and how the server will repons to that url>
 app.get("/",(req,res) => {
-    res.render('index.ejs');
+    res.render('index');
 });
 
 
