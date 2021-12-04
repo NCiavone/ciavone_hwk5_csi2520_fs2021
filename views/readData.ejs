@@ -1,0 +1,62 @@
+<!--
+-----------------------------------------------------------------------------
+Name: readData.ejs
+Author: @NCiavone
+Date Created: 12/2/21
+Purpose: 
+Notes:
+    -This is required to be under /views
+-----------------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Full Stack Demo</title>
+
+    <link type="text/css" rel="stylesheet" href="../public/css/style.css" />
+  </head>
+  <body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+      <h1>Full Stack Demo Tutorial</h1>
+    </header>
+
+    <div class="container">
+      <main>
+        <h2>
+          This page contains the demo of the four CRUD operations executed
+          against a Full Stack Web App
+        </h2>
+        <p>The application was created using the following technologies</p>
+        <ul>
+          <li>Front End -- HTML, CSS, Vanilla JS</li>
+          <li>
+            Back End -- Node.js with server-side framework express.js and
+            embedded javascript for server side content rendering
+          </li>
+          <li>Database -- MySQL server community edition version 8.0</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="container">
+      <h3>CRUD ops - READ</h3>
+      <h4>Read Data from The Database</h4>
+      <div class="card card-body">
+        <ul class="list-group">
+          <%data.forEach((item)=>{%>
+          <li class="list-group-item">
+            id: <%=item.id%> &nbsp; Name: <%= item.name%> &nbsp; Email:
+            <%=item.email%>
+          </li>
+          <%});%>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
