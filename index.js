@@ -48,6 +48,17 @@ app.get('/',(req,res) => {
     res.render('index.ejs');
 });
 
+app.get('/my_resume',(req,res) => {
+  res.render('/html/my_resume');
+});
+
+app.get('/my_fun_facts',(req,res) => {
+  res.render('/html/my_fun_facts');
+});
+
+app.get('/blog',(req,res) => {
+  res.render('/html/blog');
+});
 
 // Start Server
 const PORT = process.env.PORT || 3000;
