@@ -1,0 +1,80 @@
+<!--
+-----------------------------------------------------------------------------
+Name: trivia.ejs
+Author: @NCiavone
+Date Created: 12/2/21
+Purpose: The html + embedded javascript file for application 
+Notes:
+    -This is required to be under /views
+    -EJS files are not using style sheets properly!
+-----------------------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--Link to the CSS sheets-->
+    <link type="text/css" rel="stylesheet" href= "../public/css/style.css" />
+
+    <!--This is from Font Awesome-->
+    <script src="https://kit.fontawesome.com/4d808d741c.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body>
+    <h1>Nicholas Thomas Ciavone's Portfolio</h1>
+    <hr>
+    <header id="pageHeader">
+        <nav id="navBar">
+            <menu>
+                    
+                <a href= "index.ejs">Home Page</a></li>
+                <a href= "my_resume.ejs">Resume </a></li>
+                <a href= "my_fun_facts.ejs">Fun Fact Page</a></li>
+                <!--This is where the new Blog tab will go-->
+                <a href= "blog.ejs">Blog</a></li>
+
+            </menu>
+        </nav>
+        <hr>
+        <!-- div and iv container for quiz box application -->
+        <div class="container">
+            <div id="question-container" class="hide">
+              <div id="question">Question</div>
+              <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+              </div>
+            </div>
+            <div class="controls">
+              <button id="start-btn" class="start-btn btn">Start</button>
+              <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+          </div>
+        
+    <footer id="pageFooter">
+        <section id="footer">
+        <hr />
+        <p class ="footerH2">Created by Nicholas T. Ciavone 2021</h5>
+            <p class = "footerH3">Nciavone@oakland.edu</h5>
+            <p class = "footerH3">Link with me on Social Media!</h5>
+            <p><BR></p>
+            <a href="https://www.linkedin.com/" i class="fab fa-linkedin">LinkedIn</a>
+            
+            <a href="https://www.youtube.com/" i class="fab fa-youtube">YouTube</a>
+            
+            <a href="https://www.facebook.com/" i class="fab fa-facebook-square">Facebook</a>
+           
+        </section>
+    </footer>
+</body>
+
+</html>
