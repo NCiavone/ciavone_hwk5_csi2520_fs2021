@@ -18,7 +18,7 @@ const ejs = require('ejs');
 
 const app = new express();
 // DataBase Config
-const db = mysql.createConnection({
+const db = createConnection({
     host: 'localhost',
     user: 'root',
     password: 'Rocknroll1!',
@@ -36,12 +36,12 @@ db.connect((err) => {
 
 //Middleware Function init
 //Body Parser!
-app.use(express.json());
-app.use(express.urlencoded({extended:true})); //to parse the HTML form
+app.use(json());
+app.use(urlencoded({extended:true})); //to parse the HTML form
 
 //Initialize ejs Middleware
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(static('public'));
 
 //route <url the client will use and how the server will repons to that url>
 app.get('/',(req,res) => {
