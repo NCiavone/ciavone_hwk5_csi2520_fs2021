@@ -12,16 +12,16 @@ Notes:
 
 
 const express = require('express');
-const mysql = require("mysql");
-const ejs = require("ejs");
+const mysql = require('mysql');
+const ejs = require('ejs');
 
 
 const app = new express();
 // DataBase Config
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Rocknroll1!",
+    host: 'localhost',
+    user: 'root',
+    password: 'Rocknroll1!',
    // database: "testDB",
 });
 
