@@ -56,7 +56,7 @@ app.use(static('public'));
 
 //route <url the client will use and how the server will repons to that url>
 app.get('/',(req,res) => {
-    res.render('index.ejs');
+    res.render('/views/index.ejs');
 });
 
 app.get('/my_resume',(req,res) => {
